@@ -1,11 +1,12 @@
-const  mongoose  = require("mongoose");
+const  express = require('express')
+const routes1=express.Router()
+const {createPost,getAllPosts}=require('../controller/Posts.js')
 
-const PostSchema = new mongoose.Schema({
-  name: { type: String, required: true },
-  prompt: { type: String, required: true },
-  photo: { type: String, required: true },
-});
+routes1.post('/createPost',createPost)
 
-const Post = mongoose.model("Post", PostSchema);
+routes1.get('/getAllPosts',getAllPosts)
 
-module.exports=Post
+
+
+
+module.exports=routes1
