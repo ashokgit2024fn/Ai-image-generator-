@@ -1,0 +1,36 @@
+.header-con
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+.header-con h1{
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.header-con input
+{
+    width: 450px;
+    font-size: 20px;
+    height: 40px;
+    background-color: rgb(25, 24, 24); /* Light transparent background */
+      outline: none;
+    border: none;
+    padding-left: 20px;
+    color: aliceblue;
+}
+
+
+
+@media screen and (max-width: 576px) { 
+
+
+
+    .search
+    {
+        display: none;
+    }
+ }
